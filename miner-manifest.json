@@ -1,0 +1,52 @@
+{
+  "schema": "esi.pearl.miner-manifest/1",
+  "generated_utc": "2026-11-03",
+  "default_version": "1.5.12",
+  "notes": [
+    "Pinned, manually reviewed miner releases. prepare never follows 'latest'.",
+    "sha256 values were computed on the downloaded asset and cross-checked against the",
+    "digest field returned by the GitHub release API for kryptex/krig-miner.",
+    "The tarballs contain exactly three members: krig-miner, mine-pearl.sh,",
+    "libkrig_quantus_intel.so (verified with tar -tzf, no directories, no traversal).",
+    "Developer fee: krig-miner reports 0% on Kryptex pools and a 3% minimum on other",
+    "pools (from --help of 1.5.12). The fee is enforced by the miner and is not",
+    "disabled, wrapped or bypassed by these scripts.",
+    "1.5.12 is the default because the miner HTTP API schema used by this project was",
+    "observed live on krig-miner 1.5.12 (Windows build, same release). The 1.5.13",
+    "Linux binary carries the same telemetry string set (static check only)."
+  ],
+  "miners": [
+    {
+      "name": "krig-miner",
+      "version": "1.5.12",
+      "platform": "linux-x86_64",
+      "asset": "krig-miner-1.5.12-linux-x64.tar.gz",
+      "url": "https://github.com/kryptex/krig-miner/releases/download/v1.5.12/krig-miner-1.5.12-linux-x64.tar.gz",
+      "sha256": "6c456f6540a26ab2dd5fa02434d5827f09d19e06001ef0e6eef5ac1f80b17cea",
+      "size_bytes": 92212114,
+      "binary": "krig-miner",
+      "binary_sha256": "b1cf46c9c581099a59bc09535de30ddca8711eefa52a9a0c5dadc4dfff830e8a",
+      "members": [
+        { "path": "krig-miner", "sha256": "b1cf46c9c581099a59bc09535de30ddca8711eefa52a9a0c5dadc4dfff830e8a", "size_bytes": 97576968 },
+        { "path": "mine-pearl.sh", "sha256": "c13ba8b3ec5a5ce10e613654f7e27aff13e91b2d7a7360e85de1cc90bf5cd641", "size_bytes": 429 },
+        { "path": "libkrig_quantus_intel.so", "sha256": "bfc6ed9a14c0da3b21e6a003dc9898776494dbc8e6b951c64c2e782147897938", "size_bytes": 6446736 }
+      ]
+    },
+    {
+      "name": "krig-miner",
+      "version": "1.5.13",
+      "platform": "linux-x86_64",
+      "asset": "krig-miner-1.5.13-linux-x64.tar.gz",
+      "url": "https://github.com/kryptex/krig-miner/releases/download/v1.5.13/krig-miner-1.5.13-linux-x64.tar.gz",
+      "sha256": "21a41b4371d6f79b58bf87cf79641b3b2dc82ebab2e3481933794ab11dbcaf98",
+      "size_bytes": 96809310,
+      "binary": "krig-miner",
+      "binary_sha256": "b45d98bfefab3e58fe3c888066439e9da991708e02748191ab5532fdfe4e757f",
+      "members": [
+        { "path": "krig-miner", "sha256": "b45d98bfefab3e58fe3c888066439e9da991708e02748191ab5532fdfe4e757f", "size_bytes": 102188808 },
+        { "path": "mine-pearl.sh", "sha256": "c13ba8b3ec5a5ce10e613654f7e27aff13e91b2d7a7360e85de1cc90bf5cd641", "size_bytes": 429 },
+        { "path": "libkrig_quantus_intel.so", "sha256": "bfc6ed9a14c0da3b21e6a003dc9898776494dbc8e6b951c64c2e782147897938", "size_bytes": 6446736 }
+      ]
+    }
+  ]
+}

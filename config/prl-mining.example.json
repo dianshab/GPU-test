@@ -1,0 +1,21 @@
+{
+  "schema": "esi.pearl.config/1",
+
+  "wallet_address": "<PRL_WALLET_ADDRESS>",
+  "pool_url": "stratum+ssl://prl-us.kryptex.network:8048",
+  "worker_name": "<WORKER_NAME>",
+
+  "api_port": 12000,
+  "miner_version": "1.5.12",
+  "gpu_select": "all",
+
+  "power_limit_w": null,
+  "fan_percent": null,
+  "core_offset_mhz": null,
+
+  "sample_interval_s": 10,
+  "stale_after_s": 45,
+  "api_wait_s": 60,
+  "log_max_bytes": 20971520,
+  "allow_unverified_gpu": false
+}

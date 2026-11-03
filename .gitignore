@@ -1,0 +1,23 @@
+# Never commit personal configuration or runtime data.
+config/prl-mining.local.json
+windows/host.local.json
+state/
+logs/
+cache/
+_cache/
+
+# Python byte-code
+__pycache__/
+*.py[cod]
+
+# Editor / OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# Miner binaries and archives are fetched by `prepare` and verified by SHA-256.
+*.tar.gz
+*.zip
+bin/krig-miner

@@ -1,0 +1,24 @@
+{
+  "miner_name": "krig-miner",
+  "miner_version": "1.5.12",
+  "devices": [
+    {
+      "type": "gpu",
+      "index": 0,
+      "name": "NVIDIA GeForce RTX 5060",
+      "name_short": "RTX 5060",
+      "pci_address": "08:00.0",
+      "algorithms": [
+        {
+          "name": "pearlhash",
+          "hashrate": 71624578425218.7,
+          "shares": {
+            "accepted": 74,
+            "stale": 0,
+            "rejected": 0
+          }
+        }
+      ]
+    }
+  ]
+}

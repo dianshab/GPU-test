@@ -1,0 +1,24 @@
+{
+  "schema": "esi.pearl.host/1",
+
+  "ssh": {
+    "host": "203.0.113.10",
+    "user": "ubuntu",
+    "port": 22,
+    "key_path": "C:\\Users\\<you>\\.ssh\\id_ed25519",
+    "known_hosts": "C:\\Users\\<you>\\.ssh\\known_hosts",
+    "strict_host_key_checking": true,
+    "connect_timeout_s": 10
+  },
+
+  "remote": {
+    "home": "/home/ubuntu/esi-pearl",
+    "python": "python3",
+    "worker_name": null
+  },
+
+  "telemetry": {
+    "max_age_s": 45,
+    "poll_interval_s": 10
+  }
+}

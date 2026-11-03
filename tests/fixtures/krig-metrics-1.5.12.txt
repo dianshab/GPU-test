@@ -1,0 +1,68 @@
+# HELP krig_miner_info Build metadata.
+# TYPE krig_miner_info gauge
+krig_miner_info{git_sha="76573838469579bf0754f52aeb9363fda1169267"} 1
+# HELP krig_miner_iters_total Total host-signal poll iterations.
+# TYPE krig_miner_iters_total counter
+krig_miner_iters_total{gpu="0"} 405247
+# HELP krig_miner_triggers_total Total GPU triggers (tile met Ï target).
+# TYPE krig_miner_triggers_total counter
+krig_miner_triggers_total{gpu="0"} 74
+# HELP krig_miner_sigma_rotations_total Total observed sigma installs or retargets.
+# TYPE krig_miner_sigma_rotations_total counter
+krig_miner_sigma_rotations_total{gpu="0"} 119
+# HELP krig_miner_blocks_submitted_total Submitted shares by pool result (V2: shares; V1: blocks).
+# TYPE krig_miner_blocks_submitted_total counter
+krig_miner_blocks_submitted_total{gpu="0",result="accepted"} 74
+krig_miner_blocks_submitted_total{gpu="0",result="stale"} 0
+krig_miner_blocks_submitted_total{gpu="0",result="rejected"} 0
+# HELP krig_miner_iters_per_second Per-worker iterations per second (gauge).
+# TYPE krig_miner_iters_per_second gauge
+krig_miner_iters_per_second{gpu="0"} 65.142174594456
+# HELP krig_miner_tmads_per_second Per-worker TMADs/s (gauge).
+# TYPE krig_miner_tmads_per_second gauge
+krig_miner_tmads_per_second{gpu="0"} 71.6245784252187
+# HELP krig_miner_hashes_per_second Per-worker hashes/s (gauge, tiles*DAF).
+# TYPE krig_miner_hashes_per_second gauge
+krig_miner_hashes_per_second{gpu="0"} 71624578425218.7
+# HELP krig_miner_expected_opens_per_second Per-worker expected opens/s at current adjusted target.
+# TYPE krig_miner_expected_opens_per_second gauge
+krig_miner_expected_opens_per_second{gpu="0"} 0.007951910442580364
+# HELP krig_miner_tiles_per_second Per-worker CTA output tiles/s (diagnostic; target-normalized opens track TMADs/s).
+# TYPE krig_miner_tiles_per_second gauge
+krig_miner_tiles_per_second{gpu="0"} 136613041.73511258
+# HELP krig_miner_iter_ms Per-worker mean iteration latency (ms).
+# TYPE krig_miner_iter_ms gauge
+krig_miner_iter_ms{gpu="0"} 15.351038036809816
+# HELP krig_miner_sigma_rotation_latest_ms Latest worker-observed sigma rotation wall time from job observation to first new batch queued.
+# TYPE krig_miner_sigma_rotation_latest_ms gauge
+krig_miner_sigma_rotation_latest_ms{gpu="0"} 29.7026
+# HELP krig_miner_sigma_rotation_max_ms Maximum worker-observed sigma rotation wall time in this process.
+# TYPE krig_miner_sigma_rotation_max_ms gauge
+krig_miner_sigma_rotation_max_ms{gpu="0"} 708.7909
+# HELP krig_miner_sigma_rotation_drain_ms Latest old-batch drain time before sigma install.
+# TYPE krig_miner_sigma_rotation_drain_ms gauge
+krig_miner_sigma_rotation_drain_ms{gpu="0"} 15.596
+# HELP krig_miner_sigma_rotation_install_ms Latest sigma install time excluding old-batch drain and first queue.
+# TYPE krig_miner_sigma_rotation_install_ms gauge
+krig_miner_sigma_rotation_install_ms{gpu="0"} 12.822500000000002
+# HELP krig_miner_sigma_rotation_b_merkle_ms Latest B Merkle handle build time during sigma install.
+# TYPE krig_miner_sigma_rotation_b_merkle_ms gauge
+krig_miner_sigma_rotation_b_merkle_ms{gpu="0"} 2.0391
+# HELP krig_miner_sigma_rotation_lost_iters Latest sigma rotation time expressed as mean iterations lost.
+# TYPE krig_miner_sigma_rotation_lost_iters gauge
+krig_miner_sigma_rotation_lost_iters{gpu="0"} 1.9391042130313594
+# HELP krig_miner_sigma_rotation_bseed_changed 1 if the latest sigma rotation changed BSeed, else 0.
+# TYPE krig_miner_sigma_rotation_bseed_changed gauge
+krig_miner_sigma_rotation_bseed_changed{gpu="0"} 1
+# HELP krig_miner_block_finds_total Shares that the pool flagged is_block_find=true.
+# TYPE krig_miner_block_finds_total counter
+krig_miner_block_finds_total 0
+# HELP krig_miner_heartbeat_age_seconds Wall seconds since worker last ticked.
+# TYPE krig_miner_heartbeat_age_seconds gauge
+krig_miner_heartbeat_age_seconds{gpu="0"} 0.000
+# HELP krig_miner_pool_connected 1 if the gRPC MiningStream is currently open, 0 otherwise.
+# TYPE krig_miner_pool_connected gauge
+krig_miner_pool_connected 1
+# HELP krig_miner_pool_latency_ms Latest pool round-trip time in milliseconds.
+# TYPE krig_miner_pool_latency_ms gauge
+krig_miner_pool_latency_ms 61.967
